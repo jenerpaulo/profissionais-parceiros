@@ -1,7 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+
 const PricingSection = () => {
-  return <section id="pricing" className="py-16 md:py-24 bg-white relative overflow-hidden">
+  return (
+    <section id="pricing" className="py-16 md:py-24 bg-white relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden opacity-5">
         <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-divino-gold blur-3xl"></div>
         <div className="absolute left-0 bottom-0 h-96 w-96 rounded-full bg-divino-purple blur-3xl"></div>
@@ -38,7 +41,7 @@ const PricingSection = () => {
                 </div>
                 <div className="text-gray-500 text-sm mt-2">
                   <p>A partir de 2026: <span className="font-semibold">R$150/mês</span></p>
-                   <p>Taxa de Adesão e Suporte Inicial: <span className="font-semibold">R$99</span></p>
+                  <p>Taxa de Adesão e Suporte Inicial: <span className="font-semibold">R$99</span></p>
                 </div>
                 <div className="pt-4 border-t border-gray-100 mt-6">
                   <ul className="space-y-3 text-gray-600">
@@ -106,8 +109,8 @@ const PricingSection = () => {
                   </div>
                 </div>
                 <div className="text-gray-500 text-sm mt-2">
-                   <p>A partir de 2026: <span className="font-semibold">R$190/mês</span></p>
-                   <p>Taxa de Adesão e Suporte Inicial: <span className="font-semibold">R$99</span></p>
+                  <p>A partir de 2026: <span className="font-semibold">R$190/mês</span></p>
+                  <p>Taxa de Adesão e Suporte Inicial: <span className="font-semibold">R$99</span></p>
                 </div>
                 <div className="pt-4 border-t border-gray-100 mt-6">
                   <ul className="space-y-3 text-gray-600">
@@ -148,8 +151,8 @@ const PricingSection = () => {
               </div>
             </CardContent>
             <CardFooter className="flex justify-center pb-6">
-              <div></div> Você jamais viu uma proposta com estes benefícios!
-                </div>
+              <div className="text-center">
+                Você jamais viu uma proposta com estes benefícios!
               </div>
             </CardFooter>
           </Card>
@@ -161,6 +164,8 @@ const PricingSection = () => {
           </Button>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default PricingSection;
