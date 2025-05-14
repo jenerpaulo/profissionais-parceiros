@@ -148,7 +148,7 @@ const PricingSection = () => {
               </div>
             </CardContent>
             <CardFooter className="flex justify-center pb-6">
-              <div Você jamais viu uma proposta com estes benefícios!
+              <div></div> Você jamais viu uma proposta com estes benefícios!
                 </div>
               </div>
             </CardFooter>
