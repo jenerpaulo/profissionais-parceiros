@@ -160,7 +160,7 @@ const PricingSection = () => {
         
         <div className="mt-12 text-center">
           <Button asChild className="bg-divino-gold hover:bg-divino-gold/90 text-white px-6 py-6 text-lg">
-            <a href="http://wa.me/5501152866640" target="_blank" rel="noopener noreferrer">Quero uma Vaga!</a>
+            <a href="http://wa.me/55011968167007" target="_blank" rel="noopener noreferrer">Quero uma Vaga!</a>
           </Button>
         </div>
       </div>
