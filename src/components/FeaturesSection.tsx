@@ -45,7 +45,7 @@ const FeatureCard = ({ feature }: { feature: typeof features[0] }) => {
 };
 
 const FeaturesSection = () => {
-  const whatsappLink = "http://wa.me/5501152866640";
+  const whatsappLink = "http://wa.me/5511968167007";
   
   return (
     <section id="features" className="py-16 bg-gray-50">
