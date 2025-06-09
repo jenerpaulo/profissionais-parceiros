@@ -7,7 +7,6 @@ import { ExternalLink } from "lucide-react";
 
 const UrgencySection = () => {
   const isMobile = useIsMobile();
-  const whatsappLink = "http://wa.me/5501152866640";
   
   // List of Catholic partner organizations
   const partners = [
@@ -21,6 +20,13 @@ const UrgencySection = () => {
     "Terapeutas",
     "Psiquiatras"
   ];
+
+  const scrollToPricing = () => {
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="w-full py-16 md:py-20 lg:py-24 bg-white">
@@ -62,7 +68,7 @@ const UrgencySection = () => {
             
             <Button 
               className="bg-purple-500 hover:bg-purple-600 text-white px-6 py-6 text-lg flex items-center gap-2"
-              onClick={() => window.open(whatsappLink, '_blank')}
+              onClick={scrollToPricing}
             >
               Garanta sua Vaga
               <ExternalLink size={16} />

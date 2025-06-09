@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Video } from "lucide-react";
 
 const VideoSection = () => {
+  const scrollToPricing = () => {
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="video" className="py-16 md:py-24 bg-white">
       <div className="container">
@@ -29,7 +36,7 @@ const VideoSection = () => {
             {/* Text content */}
             <div className="space-y-4">
               <p className="text-lg text-gray-600">
-                Digite “Namoro Católico” no Google. O primeiro resultado é fruto do trabalho da nossa agência. O mesmo estamos aplicando na Católicos Online, com centenas (ou milhares) de palavras-chave mapeadas para ranquear no topo e atrair o público certo.</p>
+                Digite "Namoro Católico" no Google. O primeiro resultado é fruto do trabalho da nossa agência. O mesmo estamos aplicando na Católicos Online, com centenas (ou milhares) de palavras-chave mapeadas para ranquear no topo e atrair o público certo.</p>
               <p className="text-lg text-gray-600">
               Em poucos meses, os resultados já começarão a aparecer. E desde já, contamos com o tráfego e a autoridade do Namoro Católico para impulsionar acessos à nova rede.
 
@@ -37,7 +44,10 @@ const VideoSection = () => {
               </p>
               
               <div>
-                <Button className="bg-divino-purple hover:bg-divino-purple/90 text-white px-6 py-2">
+                <Button 
+                  className="bg-divino-purple hover:bg-divino-purple/90 text-white px-6 py-2"
+                  onClick={scrollToPricing}
+                >
                   Não hesite, estamos no WhatsApp!
                 </Button>
               </div>
